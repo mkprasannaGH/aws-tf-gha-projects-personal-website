@@ -1,0 +1,358 @@
+/* style.css - professional personal website for Ehsan */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f6f9fc;
+    color: #1a2b3c;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
+
+/* PROFILE PIC + HEADER */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.profile-pic {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e6edf5, #ffffff);
+    box-shadow: 0 20px 30px -10px rgba(0, 20, 40, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    outline: 1px solid rgba(0,115,230,0.2);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-pic .placeholder {
+    background: #1e3a5f;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none;  /* hidden by default, shown via js if img missing */
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    background-image: radial-gradient(circle at 30% 30%, #2b4b73, #0a1c2f);
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    background: linear-gradient(145deg, #0b2842, #1f4b7a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin: 0.75rem 0 1rem;
+}
+
+.badge {
+    background: white;
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    border: 1px solid #e2ecf5;
+    color: #1e3b5c;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #2c5779;
+    margin-bottom: 1.2rem;
+    max-width: 650px;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    border: 1px solid #cdddee;
+    padding: 0.6rem 1.4rem;
+    border-radius: 60px;
+    font-weight: 500;
+    color: #1a3e5c;
+    text-decoration: none;
+    transition: 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 40, 70, 0.04);
+}
+
+.btn-primary {
+    background: #1d4b77;
+    border-color: #1d4b77;
+    color: white;
+    box-shadow: 0 8px 16px -6px rgba(27, 65, 110, 0.25);
+}
+
+.btn-primary i {
+    color: white;
+}
+
+.btn:hover {
+    background: #ecf3fa;
+    border-color: #b0cbe7;
+    transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+    background: #0f3b5e;
+    border-color: #0f3b5e;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.contact-links a {
+    color: #1e3a5f;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 500;
+    border-bottom: 1px dotted transparent;
+    transition: border-color 0.15s;
+}
+
+.contact-links a:hover {
+    border-bottom-color: #1e3a5f;
+}
+
+/* SECTION general */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 2.5rem 0 1.2rem;
+    color: #113853;
+    border-left: 6px solid #2273a7;
+    padding-left: 1.2rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 1.6rem 1.4rem;
+    box-shadow: 0 12px 28px -12px rgba(0, 32, 64, 0.12);
+    border: 1px solid #eaf0f6;
+    transition: 0.15s;
+}
+
+.card:hover {
+    border-color: #bdd6ec;
+    box-shadow: 0 20px 30px -14px rgba(20, 60, 100, 0.18);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.skill-tag {
+    background: #e9f2fa;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #1b4970;
+}
+
+.job-item, .edu-item, .cert-item, .paper-item {
+    margin-bottom: 1.4rem;
+}
+
+.job-title {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #001f3f;
+}
+
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.2rem;
+    font-size: 0.9rem;
+    color: #3f627f;
+    margin: 0.25rem 0 0.4rem;
+}
+
+.company {
+    font-weight: 600;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.desc {
+    color: #2b4b68;
+    font-size: 0.95rem;
+}
+
+.paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    color: #22649c;
+    text-decoration: none;
+}
+
+.paper-link:hover {
+    text-decoration: underline;
+}
+
+.teaching-channel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.channel-icon {
+    background: #e4eefa;
+    padding: 0.4rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.course-item {
+    border-bottom: 1px dashed #d6e3ef;
+    padding: 0.9rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.course-item:last-child {
+    border-bottom: none;
+}
+
+.course-links a {
+    margin-left: 0.8rem;
+    color: #22649c;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.course-links a:hover {
+    text-decoration: underline;
+}
+
+.fa, .fas, .fab, .far {
+    font-size: 0.95em;
+}
+
+.interests {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background: #e5f0fa;
+    border-radius: 40px;
+    padding: 1rem 2rem;
+    margin: 2rem 0 0.5rem;
+    align-items: center;
+}
+
+.interests a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.interests a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #dbe8f2;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3.5rem;
+    color: #597e9c;
+    font-size: 0.9rem;
+}
+
+.download-cv i {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}

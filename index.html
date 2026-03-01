@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehsan Shekari · Lead Developer & Architect</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- PROFILE SECTION with picture -->
+    <div class="hero">
+        <div class="profile-pic">
+            <!-- Real profile picture: replace "profile.jpg" with your image file.
+                 If file missing, elegant placeholder with initial "E" appears -->
+            <picture>
+                <source srcset="profile.webp" type="image/webp">
+                <source srcset="profile.jpg" type="image/jpeg">
+                <img src="profile.jpg" alt="Ehsan Shekari profile" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder-fallback');">
+            </picture>
+            <div class="placeholder" style="display: none;">E</div>
+        </div>
+        <div class="hero-text">
+            <h1>Hi there! 👋 I'm Ehsan</h1>
+            <div class="hero-tags">
+                <span class="badge">Lead Developer</span>
+                <span class="badge">Solution Architect</span>
+                <span class="badge">AWS Cloud Engineer</span>
+                <span class="badge">(AWS Certified)</span>
+            </div>
+            <div class="lead">
+                Full‑stack JavaScript (Node.js, TypeScript, React), cloud & container native. 
+                MSc in CS with AI focus. Mentor & course creator.
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary download-cv"><i class="fas fa-file-pdf"></i> Download my CV</a>
+                <a href="#" class="btn"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:e.shekari@gmail.com"><i class="fas fa-envelope"></i> e.shekari@gmail.com</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section-title">🛠️ Skills & Expertise</div>
+    <div class="card">
+        <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML/CSS</span><span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Redux</span><span class="skill-tag">GraphQL</span><span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span><span class="skill-tag">NestJS</span><span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span><span class="skill-tag">AWS</span><span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span><span class="skill-tag">Terraform</span>
+            <span class="skill-tag">AWS CDK</span><span class="skill-tag">Git</span>
+        </div>
+    </div>
+
+    <!-- WORK EXPERIENCE -->
+    <div class="section-title">💼 Work Experience</div>
+    <div class="card-grid">
+        <div class="card job-item">
+            <div class="job-title">Senior Cloud-Native Full Stack Developer (AWS)</div>
+            <div class="job-meta"><span class="company">Oriola</span> <span class="date"><i class="far fa-calendar-alt"></i> May 2025 – Present</span></div>
+            <div class="desc">Espoo, Finland · Building scalable health‑tech solutions on AWS, serverless & Kubernetes.</div>
+        </div>
+        <div class="card job-item">
+            <div class="job-title">Senior Software Engineer</div>
+            <div class="job-meta"><span class="company">ALPHASENSE</span> <span class="date"><i class="far fa-calendar-alt"></i> Jun 2021 – Nov 2024</span></div>
+            <div class="desc">Helsinki · Full‑stack, cloud architecture, performance optimisation.</div>
+        </div>
+        <div class="card job-item">
+            <div class="job-title">Lead Software Engineer</div>
+            <div class="job-meta"><span class="company">Perficient (Talos Digital)</span> <span class="date"><i class="far fa-calendar-alt"></i> Nov 2020 – May 2021</span></div>
+            <div class="desc">Remote, Colombia · Technical lead for enterprise Node/React projects.</div>
+        </div>
+        <div class="card job-item">
+            <div class="job-title">Engineering Manager & Technical Lead</div>
+            <div class="job-meta"><span class="company">Fanap</span> <span class="date"><i class="far fa-calendar-alt"></i> May 2019 – Oct 2020</span></div>
+            <div class="desc">Mashhad, Iran · Led teams, designed microservices, JavaScript stack.</div>
+        </div>
+        <div class="card job-item">
+            <div class="job-title">Full Stack JavaScript Developer</div>
+            <div class="job-meta"><span class="company">Part</span> <span class="date"><i class="far fa-calendar-alt"></i> Jun 2016 – Apr 2019</span></div>
+            <div class="desc">Mashhad · Node.js, React, and cloud deployments.</div>
+        </div>
+        <div class="card job-item">
+            <div class="job-title">PHP and WordPress Developer</div>
+            <div class="job-meta"><span class="company">Freelance</span> <span class="date"><i class="far fa-calendar-alt"></i> Jul 2010 – May 2016</span></div>
+            <div class="desc">Mashhad · Custom WordPress, PHP applications.</div>
+        </div>
+    </div>
+
+    <!-- EDUCATION & CERTIFICATES (2 columns) -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div>
+            <div class="section-title" style="margin-top: 1rem;">🎓 Education</div>
+            <div class="card edu-item"><strong>MSc. Decision Science & Knowledge Engineering</strong><br>Khazarami University, Tehran · 2011–2013</div>
+            <div class="card edu-item"><strong>BSc. Computer Engineering</strong><br>Ferdowsi University, Mashhad · 2005–2010</div>
+        </div>
+        <div>
+            <div class="section-title" style="margin-top: 1rem;">🎖️ Certificates</div>
+            <div class="card cert-item"><i class="fas fa-certificate" style="color:#1e4d77;"></i> AWS Certified Solutions Architect – Associate</div>
+            <div class="card cert-item"><i class="fas fa-certificate" style="color:#1e4d77;"></i> AWS Certified Developer - Associate</div>
+        </div>
+    </div>
+
+    <!-- PAPERS -->
+    <div class="section-title">📄 Papers</div>
+    <div class="card-grid">
+        <div class="card paper-item">
+            <strong>A Combination Approach Based on a Novel Data Clustering Method …</strong> Electric Power Systems Research, 2019 <br>
+            <a href="#" class="paper-link"><i class="fas fa-external-link-alt"></i> Read more</a>
+        </div>
+        <div class="card paper-item">
+            <strong>NGTSOM: A Novel Data Clustering Algorithm …</strong> AIJ-MISC, 2016 <br>
+            <a href="#" class="paper-link"><i class="fas fa-external-link-alt"></i> Read more</a>
+        </div>
+        <div class="card paper-item">
+            <strong>A New Game Theory Based Approach for Self-Organizing Map Networks</strong> Amirkabir Univ, 2016 <br>
+            <a href="#" class="paper-link"><i class="fas fa-external-link-alt"></i> Read more</a>
+        </div>
+    </div>
+
+    <!-- TEACHING / COURSES -->
+    <div class="section-title">🎓 Teaching & Courses</div>
+    <div class="teaching-channel" style="margin-bottom: 1.5rem;">
+        <span class="channel-icon"><i class="fab fa-youtube"></i> YouTube (Farsi)</span>
+        <span class="channel-icon"><i class="fas fa-play-circle"></i> Aparat (Farsi)</span>
+        <span class="channel-icon"><i class="fab fa-udemy"></i> Udemy (English & Farsi)</span>
+        <span class="channel-icon"><i class="fas fa-graduation-cap"></i> Danup (Farsi)</span>
+    </div>
+
+    <div class="card" style="padding: 1.5rem;">
+        <h3 style="margin-bottom: 1rem;">📚 Recent courses (2025, 2024, …)</h3>
+        <div class="course-item"><span><strong>AWS, Terraform & GitHub Actions Projects</strong> (English, 2025, 3:30h)</span> <span class="course-links"><a href="#">Udemy</a> <a href="#">Packt</a> <a href="#">Source Code</a></span></div>
+        <div class="course-item"><span><strong>React: Crash Course</strong> (English, 2025, 3:05h)</span> <span class="course-links"><a href="#">Udemy</a> <a href="#">Packt</a> <a href="#">Source Code</a></span></div>
+        <div class="course-item"><span><strong>React and Redux Complete Course</strong> (Farsi, 2025, 12:46h)</span> <span class="course-links"><a href="#">YouTube</a> <a href="#">Udemy</a> <a href="#">Danup</a> <a href="#">Source</a></span></div>
+        <div class="course-item"><span><strong>Programming Foundations</strong> (Farsi, 2020, 4:22h)</span> <span class="course-links"><a href="#">YouTube</a> <a href="#">Udemy</a> <a href="#">Danup</a></span></div>
+        <div class="course-item"><span><strong>JavaScript Essential Training</strong> (Farsi, 2020, 8:45h)</span> <span class="course-links"><a href="#">YouTube</a> <a href="#">Danup</a> <a href="#">Source</a></span></div>
+        <div class="course-item"><span><strong>OOP in JavaScript</strong> (Farsi, 2020, 1:06h)</span> <span class="course-links"><a href="#">YouTube</a> <a href="#">Danup</a></span></div>
+        <div class="course-item"><span><strong>Sending HTTP Requests in React</strong> (Farsi, 2022, 2:17h)</span> <span class="course-links"><a href="#">YouTube</a> <a href="#">Aparat</a> <a href="#">Udemy</a> <a href="#">Danup</a></span></div>
+        <div class="course-item"><span><strong>MATLAB Essential Training</strong> (Farsi, 2020, 4:16h)</span> <span class="course-links"><a href="#">YouTube</a> <a href="#">Danup</a></span></div>
+        <div class="course-item"><span><strong>WordPress Essential Training</strong> (Farsi, 2020, 3:05h)</span> <span class="course-links"><a href="#">YouTube</a> <a href="#">Danup</a></span></div>
+        <div class="course-item"><span><strong>Introduction to VS Code</strong> (Farsi, 2020, 1:15h)</span> <span class="course-links"><a href="#">YouTube</a> <a href="#">Aparat</a> <a href="#">Danup</a></span></div>
+    </div>
+
+    <!-- CRASH COURSES / PLAYLISTS -->
+    <div class="section-title" style="margin-top: 2rem;">🎓 Crash Courses & Playlists</div>
+    <div class="card-grid">
+        <div class="card">TypeScript Crash Course (Farsi, 2022, 1:00) <span class="course-links"><a href="#">YouTube</a> <a href="#">Aparat</a> <a href="#">Danup</a></span></div>
+        <div class="card">React & TypeScript (Farsi, 2022, 0:30) <span class="course-links"><a href="#">YouTube</a> <a href="#">Aparat</a> <a href="#">Danup</a></span></div>
+        <div class="card">Json Server Crash Course (Farsi, 2022, 0:20) <span class="course-links"><a href="#">YouTube</a> <a href="#">Aparat</a> <a href="#">Danup</a></span></div>
+        <div class="card">Introduction to Node.js (Farsi, 2020, 4:50) <span class="course-links"><a href="#">YouTube P1</a> <a href="#">P2</a> <a href="#">Aparat</a></span></div>
+        <div class="card">HTML Crash Course (Farsi, 2024, 1:00) <span class="course-links"><a href="#">YouTube</a> <a href="#">Aparat</a> <a href="#">Source</a></span></div>
+        <div class="card">Linux Crash Course (Farsi, 2020, 1:54) <span class="course-links"><a href="#">YouTube</a> <a href="#">Aparat</a></span></div>
+    </div>
+
+    <!-- MUSIC & RETRO GAMING -->
+    <div class="interests">
+        <span>🎵 Music & Retro Gaming Enthusiast 🕹️</span>
+        <span><a href="#"><i class="fab fa-instagram"></i> Instagram (Music)</a></span>
+        <span><a href="#"><i class="fab fa-tiktok"></i> TikTok (Music)</a></span>
+        <span><a href="#"><i class="fab fa-youtube"></i> YouTube (Retro)</a></span>
+        <span><a href="#"><i class="fab fa-telegram"></i> Telegram (Retro)</a></span>
+        <span><a href="#"><i class="fas fa-gamepad"></i> Rumble</a></span>
+    </div>
+
+    <hr>
+    <footer>
+        <span>© 2025 Ehsan Shekari — Let's connect: e.shekari@gmail.com</span>
+    </footer>
+</div>
+
+<!-- tiny inline script to handle profile placeholder if image missing -->
+<script>
+    (function() {
+        const picContainer = document.querySelector('.profile-pic');
+        const img = picContainer.querySelector('img');
+        const placeholder = picContainer.querySelector('.placeholder');
+        if (img) {
+            img.onerror = function() {
+                img.style.display = 'none';
+                if (placeholder) {
+                    placeholder.style.display = 'flex';  // show placeholder
+                }
+            };
+            img.onload = function() {
+                if (placeholder) placeholder.style.display = 'none';
+            };
+            if (img.complete && img.naturalHeight === 0) {
+                img.onerror();
+            }
+        } else if (placeholder) {
+            placeholder.style.display = 'flex';
+        }
+    })();
+</script>
+</body>
+</html>
