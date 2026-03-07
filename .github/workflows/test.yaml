@@ -13,14 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
-          role-to-assume: ${{ secrets.IAM_ROLE }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          role-to-assume: ${{ secrets.IAM_ROLE_MARCH06 }}
+          aws-region: ${{ secrets.AWS_REGION_MARCH06 }}
       
       - name: List S3 Buckets
         env: 
-          AWS_REGION: ${{ secrets.AWS_REGION }}
+          AWS_REGION: ${{ secrets.AWS_REGION_MARCH06 }}
         run: |
-          echo "Listing S3 Buckets"
+          echo "Listing1 S3 Buckets"
           aws s3 ls
